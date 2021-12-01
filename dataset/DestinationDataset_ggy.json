@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_ggy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataoh3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "oh3MovieData",
+				"fileSystem": "oh3test2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
