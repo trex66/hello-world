@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "oh3ws"
+		},
+		"AzureDataoh3_accountKey": {
+			"value": ""
+		},
+		"AzureSqlCloudSales_connectionString": {
+			"value": ""
+		},
+		"AzureSqlCloudStreaming_connectionString": {
+			"value": ""
+		},
+		"FourthCoffeeVM_password": {
+			"value": ""
+		},
+		"oh3CosmosDb1_connectionString": {
+			"value": ""
+		},
+		"oh3ws-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"AzureDataoh3_properties_typeProperties_url": {
+			"value": "https://oh3sa.dfs.core.windows.net/"
+		},
+		"FourthCoffeeVM_properties_typeProperties_host": {
+			"value": "C:\\Rentals"
+		},
+		"FourthCoffeeVM_properties_typeProperties_userId": {
+			"value": "southridge"
+		},
+		"oh3ws-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://oh3sa.dfs.core.windows.net"
+		}
+	}
+}
