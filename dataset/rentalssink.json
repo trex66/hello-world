@@ -1,0 +1,23 @@
+{
+	"name": "rentalssink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataoh3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Rentals",
+				"fileSystem": "oh3test2"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
