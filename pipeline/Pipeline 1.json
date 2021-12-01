@@ -14,7 +14,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "/"
+					},
+					{
+						"name": "Destination",
+						"value": "oh3test2/Rentals/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
@@ -42,6 +51,44 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ActorID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ActorID",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ActorName",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ActorName",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Gender",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Gender",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
