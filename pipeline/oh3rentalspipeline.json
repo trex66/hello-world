@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "oh3_rentals",
+				"name": "oh3rentals",
 				"description": " Fourth Coffee",
 				"type": "Copy",
 				"dependsOn": [],
