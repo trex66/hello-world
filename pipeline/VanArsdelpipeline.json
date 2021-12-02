@@ -88,12 +88,12 @@
 				"typeProperties": {
 					"variableName": "list",
 					"value": [
-						"dbo.Actors",
-						"dbo.Customers",
-						"dbo.MovieActors",
-						"dbo.Movies",
-						"dbo.OnlineMovieMappings",
-						"dbo.Transactions"
+						"Actors",
+						"Customers",
+						"MovieActors",
+						"Movies",
+						"OnlineMovieMappings",
+						"Transactions"
 					]
 				}
 			}
