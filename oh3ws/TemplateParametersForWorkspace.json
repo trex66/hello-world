@@ -23,6 +23,9 @@
 		"oh3ws-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
+		"sqlVanArsdelLtd_connectionString": {
+			"value": ""
+		},
 		"AzureDataoh3_properties_typeProperties_url": {
 			"value": "https://oh3sa.dfs.core.windows.net/"
 		},
