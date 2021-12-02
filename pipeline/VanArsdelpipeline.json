@@ -1,0 +1,61 @@
+{
+	"name": "VanArsdelpipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Copy data1",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"enableStaging": false
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
+		"variables": {
+			"list": {
+				"type": "Array",
+				"defaultValue": [
+					"dbo.Actors",
+					"dbo.Customers",
+					"dbo.MovieActors",
+					"dbo.Movies",
+					"dbo.OnlineMovieMappings",
+					"dbo.Transactions"
+				]
+			}
+		},
+		"annotations": []
+	}
+}
